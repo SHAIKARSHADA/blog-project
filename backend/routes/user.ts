@@ -1,9 +1,9 @@
 import { Hono } from "hono";
 
-const app = new Hono();
+const user = new Hono() 
 
-app.post("/signup",async (c) => {
-  c.text("hello")
-});
+user.get("/signup",async (c) => {
+  c.text("hello");
+})
 
-export default app;
+export default user;
